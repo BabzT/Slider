@@ -1,9 +1,13 @@
+// MANUAL SLIDE
 
-var indexValue = 1;
+let indexValue = 1;
 showImg(indexValue);
 
+let timer = setInterval(showSlides,5000);
 function side_slide(e) {
-    showImg(indexValue +=e);
+    indexValue += e;
+    showImg(indexValue);
+    resetTimer();
 }
 
 function showImg(e) {
@@ -21,6 +25,13 @@ function showImg(e) {
     img[indexValue-1].style.display = "flex";
 }
 
+function resetTimer (){
+    clearInterval(timer);
+    timer = setInterval(showSlides,5000);
+}
+
+// AUTOMATIC SLIDE
+
 var slidesIndex = 0;
 showSlides();
 
@@ -35,5 +46,5 @@ function showSlides(){
         slidesIndex = 1;
     }
     slides[slidesIndex - 1].style.display = "flex"
-    setTimeout(showSlides,5000)
+    setInterval(timer)
 }
