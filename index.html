@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/cefa489f50.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <section>
+        <div class="header">
+            <span class="slashback">/</span>
+            <h1 class="topic">REVIEWS</h1>
+        </div>
+        <div class="slider">
+            <div class="slides fade">
+                <div class="imagecircle"><img src="./img/babz.jpg" alt=""></div>
+                <h1 class="name">Akinwobi Babatunde</h1>
+                <p class="position">Frontend Developer</p>
+                <p class="review">I am a frontend Web Developer with less than one year
+                    of experience. I am Proficient in HTML,CSS, and JAVASCRIPT.
+                    I am being mentored by a Boss named Grand Busta.
+                </p>
+                <i class="fa fa-quote-right quotation"></i>
+            </div>
+            <div class="slides fade">
+                <div class="imagecircle"><img src="./img/busta.jpg" alt=""></div>
+                <h1 class="name">Olaifa Boluwatife</h1>
+                <p class="position">Full Stack Developer</p>
+                <p class="review">I am a Full Stack Developer with more than three years
+                    of experience. I've worked for various companies on Frontend and backend projects.
+                    I also guide and mentor junior devs in their tech careers.
+                </p>
+                <i class="fa fa-quote-right quotation"></i>
+            </div>
+            <div class="slides fade">
+                <div class="imagecircle"><img src="./img/taofeek.jpg" alt=""></div>
+                <h1 class="name">Jayeola Taofeek</h1>
+                <p class="position">Content Writer</p>
+                <p class="review">I am an award winning content writer with more than 4 years of experience. 
+                    I am also a Motivational speaker, I've spoken in various institutions in the world.
+                    I am a a goal driven man.
+                </p>
+                <i class="fa fa-quote-right quotation"></i>
+            </div>
+            <div class="slides fade">
+                <div class="imagecircle"><img src="./img/glory.jpg" alt=""></div>
+                <h1 class="name">Olaifa Glory</h1>
+                <p class="position">Mobile Developer</p>
+                <p class="review">I am a Moblie Developer with more than three years of experience. 
+                    I'm working for various compainies earing thousands of dollars monthly.
+                    I keeping working on myslef to improve my skills.
+                </p>
+                <i class="fa fa-quote-right quotation"></i>
+            </div>
+            <div class="slides fade">
+                <div class="imagecircle"><img src="./img/vicks.jpeg" alt=""></div>
+                <h1 class="name">Oyelade Victor</h1>
+                <p class="position">Crypto Trader</p>
+                <p class="review">I am a Certified Crypto Currency Trader with more than 2 years
+                    of experience. I am an expert in PayPal,CashApp,Zelle,Venmo. I have the best rate you can think of.
+                </p>
+                <i class="fa fa-quote-right quotation"></i>
+            </div>
+            <div onclick="side_slide(-1)" class="slide left">
+                <i class='fas fa-angle-left'></i>
+            </div>
+            <div onclick="side_slide(1)" class="slide right">
+                <i class='fas fa-angle-right'></i>
+            </div>
+        </div>
+    </section>
+
+    <script src="text.js"></script>
+</body>
+</html>
