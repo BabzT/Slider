@@ -52,6 +52,7 @@ section{
     background-color: lightcyan;
     border-radius: 10px;
     width: 100%;
+    text-align: center;
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
@@ -136,9 +137,21 @@ section{
         height: 450px;
     }
 
+    .slides{
+        padding: 25px;
+    }
+
     .slide{
         font-size: 15px;
         width: 25px;
         height: 25px;
+    }
+
+    .position{
+        font-size: 18px;
+    }
+
+    .review{
+        font-size: 15px;
     }
 }
